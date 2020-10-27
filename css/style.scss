@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@500;700;800&display=swap');
+
+body {
+  background-color: #FEF503;
+  font-family: 'Turret Road', cursive;
+  overflow: hidden;
+}
+
+.hero-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 1080px;
+
+  @media (max-width: 1300px) {     
+    height: 780px;
+  }
+  
+}
+
+.hero {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 1920px;
+  height: 1080px;
+  background-image: linear-gradient(to bottom, transparent 62%, #FEF503 78%),url(../img/bg-cover.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 1920px auto;
+
+  @media (max-width: 1300px) {     
+    background-position: 588px;
+    background-size: 1110px auto;
+    height: 1000px;
+  }
+
+  .content {
+    position: absolute;
+    top: 400px;
+    right: 282px;
+    width: 550px;    
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+
+    h2 {
+      text-shadow: 1px 1px 2px #FEF503;
+      font-weight: 600;
+      color: #038899;
+
+      @media (max-width: 1300px) { 
+        font-size: 27px; 
+      }
+    }
+
+    @media (max-width: 1300px) { 
+      right: auto;
+      width: 100%;
+      top: 50px; 
+    }
+
+  }
+
+  #time {    
+    font-size: 50px;
+    color: #fff;    
+    padding: 20px 70px;
+    background-color: #ff003c;
+
+    @media (max-width: 1300px) { 
+      font-size: 40px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
